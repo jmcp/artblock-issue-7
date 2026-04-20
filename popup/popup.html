@@ -19,6 +19,15 @@
       </label>
     </div>
 
+    <div class="toggle-row">
+      <span class="toggle-label">Hover controls</span>
+      <label class="toggle">
+        <input type="checkbox" id="showHoverControls" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+    <p class="feedback" id="hoverFeedback"></p>
+
     <div class="setting-row">
       <label for="category">Source</label>
       <select id="category">
@@ -42,6 +51,25 @@
       <div class="stat">
         <span class="stat-number" id="count">0</span>
         <span class="stat-label">ads replaced this session</span>
+      </div>
+    </div>
+
+    <div class="profile-section">
+      <div class="section-label">Your profile</div>
+      
+      <div class="data-row">
+        <button class="action-btn" id="exportSettings">Export settings</button>
+        <button class="action-btn" id="importSettings">Import settings</button>
+        <input type="file" id="importFile" accept=".json" style="display:none">
+      </div>
+      <p class="feedback" id="profileFeedback"></p>
+
+      <div class="reset-row" id="resetSiteRow" style="display:none">
+        <button class="reset-btn" id="resetSite">Reset site settings</button>
+      </div>
+
+      <div class="reset-row">
+        <button class="reset-btn" id="resetProfile">Reset profile</button>
       </div>
     </div>
 
